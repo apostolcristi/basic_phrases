@@ -17,7 +17,7 @@ jobs:
         run: flutter pub get
 
       - name: run flutter code format
-        run: flutter format ./lib  --set-exit-if-changed
+        run: flutter format ./lib -l 120 --set-exit-if-changed
 
       - name: run flutter code analyze
         run: flutter analyze
