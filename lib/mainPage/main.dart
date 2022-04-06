@@ -1,4 +1,3 @@
-// ignore: unused_import
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
@@ -41,8 +40,7 @@ class BasicPhraseAppScreen extends State<MainApplicationStateful> {
     'Suflet de ultras': 'Suflet de ultras.mp3'
   };
 
-  // ignore: avoid_void_async
-  void playFile(String title) async {
+  Future<void> playFile(String title) async {
     audioPlayer = await player.play(title);
     alreadyPlaying = true;
   }
@@ -97,8 +95,7 @@ class BasicPhraseAppScreen extends State<MainApplicationStateful> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-                    backgroundColor:
-                        MaterialStateProperty.all(Colors.transparent),
+                    backgroundColor: MaterialStateProperty.all(Colors.transparent),
                     shadowColor: MaterialStateProperty.all(Colors.transparent),
                   ),
                   onPressed: () {
