@@ -97,7 +97,8 @@ class BasicPhraseAppScreen extends State<MainApplicationStateful> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                     ),
-                    backgroundColor: MaterialStateProperty.all(Colors.transparent),
+                    backgroundColor:
+                        MaterialStateProperty.all(Colors.transparent),
                     shadowColor: MaterialStateProperty.all(Colors.transparent),
                   ),
                   onPressed: () {
