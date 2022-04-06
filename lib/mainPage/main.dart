@@ -109,7 +109,6 @@ class BasicPhraseAppScreen extends State<MainApplicationStateful> {
                     }
                   },
                   child: Text(
-
                     songsAndTitle.keys.elementAt(index),
                     textAlign: TextAlign.center,
                   ),
